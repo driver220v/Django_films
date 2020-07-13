@@ -1,7 +1,10 @@
-from django.db import models
+
 
 
 # Create your models here.
+from django.db import models
+
+
 class Film(models.Model):
     film_id = models.IntegerField(null=False, unique=True, serialize=True)
     title = models.CharField(max_length=50, null=False)
