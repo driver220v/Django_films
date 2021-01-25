@@ -12,4 +12,6 @@ class Command(BaseCommand):
         main_parse(main_gather())
         Film.objects.all()
         print('ok')
+        for i in range(1000):
+            print('hello world')
         return 'ok'
